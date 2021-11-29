@@ -1,0 +1,36 @@
+{
+    "namespace": "io.github.chadhartman",
+    "type": "record",
+    "name": "User",
+    "doc": "A user profile",
+    "fields": [
+        {
+            "doc": "User's name",
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "doc": "Alternative name alias",
+            "name": "alias",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "doc": "User's address",
+            "name": "address",
+            "type": "io.github.chadhartman.Address"
+        },
+        {
+            "doc": "List of user's events",
+            "name": "events",
+            "type": {
+                "type": "array",
+                "items": "io.github.chadhartman.UserEvent"
+            },
+            "default": []
+        }
+    ]
+}

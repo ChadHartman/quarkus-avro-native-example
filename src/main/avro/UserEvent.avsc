@@ -1,0 +1,25 @@
+{
+    "namespace": "io.github.chadhartman",
+    "type": "record",
+    "name": "UserEvent",
+    "doc": "A specific user event",
+    "fields": [
+        {
+            "doc": "Timestamp event occurred",
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+            }
+        },
+        {
+            "doc": "Event-specific properties",
+            "name": "properties",
+            "type": {
+                "type": "map",
+                "values": "string",
+                "default": {}
+            }
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "namespace": "io.github.chadhartman",
+    "type": "record",
+    "name": "Address",
+    "doc": "Address Object for a User",
+    "fields": [
+        {
+            "doc": "Street number and name",
+            "name": "street",
+            "type": "string"
+        },
+        {
+            "doc": "City the address resides in",
+            "name": "city",
+            "type": "string"
+        },
+        {
+            "doc": "2-letter state code",
+            "name": "state",
+            "type": "io.github.chadhartman.State"
+        },
+        {
+            "doc": "Zip code",
+            "name": "zip",
+            "type": "string"
+        }
+    ]
+}
